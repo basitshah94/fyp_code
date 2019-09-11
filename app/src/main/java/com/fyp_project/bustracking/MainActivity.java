@@ -25,7 +25,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    Button rajakaleem;
+//    Button rajakaleem;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
