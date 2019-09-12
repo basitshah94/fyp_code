@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity
 //            }
 //        });
 
-        raja kaleem
+//        raja kaleem
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
