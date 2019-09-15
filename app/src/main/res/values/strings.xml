@@ -13,4 +13,14 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="student">Student</string>
+    <string name="register">Register</string>
+    <string name="upload_picture">Upload Picture</string>
+    <string name="guardian">Guardian</string>
+    <string name="faculty">Faculty</string>
+    <string name="password">Password</string>
+    <string name="email">  Email</string>
+    <string name="uni_text">Air University Bus Tracking System</string>
+    <string name="registerhere">Don\'t have an account?</string>
+    <string name="forgot_password">Forgot password?</string>
 </resources>
