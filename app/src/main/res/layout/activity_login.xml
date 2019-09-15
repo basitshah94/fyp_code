@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_alignParentTop="true"
-    android:layout_alignParentBottom="true">
+    android:layout_alignParentBottom="true"
+    android:background="@color/app_background_blue">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,28 +29,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
             android:background="@color/colorPrimaryDark"
             android:fontFamily="@font/promptregular"
             android:padding="8dp"
-            android:layout_marginBottom="12dp"
             android:text="@string/uni_text"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <RadioGroup
             android:id="@+id/radioMain"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="55dp"
             android:layout_gravity="center"
-            android:padding="2dp"
             android:layout_marginBottom="12dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="2dp">
 
             <RadioButton
                 android:id="@+id/student_radio"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/et_bg_no_padding"
                 android:buttonTint="@color/colorAccent"
@@ -64,7 +66,7 @@
             <RadioButton
                 android:id="@+id/teacher_radio"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/et_bg_no_padding"
                 android:buttonTint="@color/colorAccent"
@@ -78,7 +80,7 @@
             <RadioButton
                 android:id="@+id/admin_radio"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/et_bg_no_padding"
                 android:buttonTint="@color/colorAccent"
@@ -147,7 +149,7 @@
             android:layout_gravity="center"
             android:layout_marginEnd="@dimen/margin_5dp"
             android:layout_marginBottom="12dp"
-            android:background="@color/white"
+            android:background="@color/app_background_blue"
             android:gravity="right"
             android:padding="4dp"
             android:text="@string/forgot_password"
@@ -171,8 +173,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginBottom="@dimen/padding_10dp"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <TextView

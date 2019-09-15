@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/app_background_blue">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -37,12 +38,13 @@
                 android:text="Transport Facility Registration"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <RadioGroup
                 android:id="@+id/radioMain"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="55dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="2dp"
                 android:layout_marginRight="2dp"
@@ -51,7 +53,7 @@
 
                 <RadioButton
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@drawable/et_bg_no_padding"
                     android:buttonTint="@color/colorAccent"
@@ -61,7 +63,17 @@
 
                 <RadioButton
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_bg_no_padding"
+                    android:buttonTint="@color/colorAccent"
+                    android:drawableStart="@drawable/teacher_icon"
+                    android:text=" Faculty"
+                    android:textSize="12dp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@drawable/et_bg_no_padding"
                     android:buttonTint="@color/colorAccent"
@@ -69,15 +81,6 @@
                     android:text=" Guardian"
                     android:textSize="12dp" />
 
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/et_bg_no_padding"
-                    android:buttonTint="@color/colorAccent"
-                    android:drawableStart="@drawable/teacher_icon"
-                    android:text=" Faculty"
-                    android:textSize="12dp" />
 
             </RadioGroup>
 
@@ -165,6 +168,7 @@
                     android:drawableStart="@drawable/ic_smartphone"
                     android:hint=" Mobile #"
                     android:inputType="number" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
