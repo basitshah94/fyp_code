@@ -56,9 +56,9 @@
                 android:background="@drawable/et_bg_no_padding"
                 android:buttonTint="@color/colorAccent"
                 android:checked="true"
-                android:drawableLeft="@drawable/student_icon"
+                android:drawableLeft="@drawable/commuter_icon"
                 android:gravity="center"
-                android:text="@string/student"
+                android:text="Commuter"
                 android:textColor="@color/colorPrimary"
                 android:textSize="12dp"
                 android:textStyle="bold" />
@@ -70,9 +70,9 @@
                 android:layout_weight="1"
                 android:background="@drawable/et_bg_no_padding"
                 android:buttonTint="@color/colorAccent"
-                android:drawableStart="@drawable/teacher_icon"
+                android:drawableStart="@drawable/driver_icon"
                 android:gravity="center"
-                android:text="@string/faculty"
+                android:text="Driver"
                 android:textColor="@color/colorPrimary"
                 android:textSize="12dp"
                 android:textStyle="bold" />
@@ -161,7 +161,7 @@
 
         <Button
             android:id="@+id/btnSignIn"
-            android:layout_width="280dp"
+            android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="18dp"

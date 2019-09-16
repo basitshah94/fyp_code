@@ -46,41 +46,52 @@
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="2dp"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal"
+                android:padding="2dp">
 
                 <RadioButton
-                    android:layout_width="match_parent"
+                    android:id="@+id/student_radio"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@drawable/et_bg_no_padding"
                     android:buttonTint="@color/colorAccent"
-                    android:drawableStart="@drawable/student_icon"
-                    android:text=" Student"
-                    android:textSize="12dp" />
+                    android:checked="true"
+                    android:drawableLeft="@drawable/commuter_icon"
+                    android:gravity="center"
+                    android:text="Commuter"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
 
                 <RadioButton
-                    android:layout_width="match_parent"
+                    android:id="@+id/teacher_radio"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@drawable/et_bg_no_padding"
                     android:buttonTint="@color/colorAccent"
-                    android:drawableStart="@drawable/teacher_icon"
-                    android:text=" Faculty"
-                    android:textSize="12dp" />
+                    android:drawableStart="@drawable/driver_icon"
+                    android:gravity="center"
+                    android:text="Driver"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
 
                 <RadioButton
-                    android:layout_width="match_parent"
+                    android:id="@+id/admin_radio"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@drawable/et_bg_no_padding"
                     android:buttonTint="@color/colorAccent"
-                    android:drawableStart="@drawable/teacher_icon"
-                    android:text=" Guardian"
-                    android:textSize="12dp" />
-
+                    android:drawableStart="@drawable/guardian_icon"
+                    android:gravity="center"
+                    android:text="@string/guardian"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
 
             </RadioGroup>
 
