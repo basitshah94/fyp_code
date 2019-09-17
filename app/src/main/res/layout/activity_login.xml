@@ -186,7 +186,7 @@
                 android:padding="5dp"
                 android:text="@string/registerhere"
                 android:textAllCaps="false"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="15dp" />
 
 
@@ -194,7 +194,7 @@
                 android:id="@+id/tvSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.5"
+                android:layout_weight="1.1"
                 android:gravity="left"
                 android:padding="5dp"
                 android:text="Sign Up"
