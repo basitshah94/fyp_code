@@ -24,4 +24,5 @@
     <string name="registerhere">New user?</string>
     <string name="forgot_password">Forgot password?</string>
     <string name="SignUp">SIGN UP</string>
+    <string name="administrator">Administrator</string>
 </resources>
