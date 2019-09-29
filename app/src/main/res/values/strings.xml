@@ -25,4 +25,12 @@
     <string name="forgot_password">Forgot password?</string>
     <string name="SignUp">SIGN UP</string>
     <string name="administrator">Administrator</string>
+
+    <string name="title_shop">Shop</string>
+    <string name="title_gifts">Gifts</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_profile">Profile</string>
+    <string name="air_university">Air University</string>
+    <string name="air_university_bus_tracking">Air University Bus Tracking</string>
+
 </resources>

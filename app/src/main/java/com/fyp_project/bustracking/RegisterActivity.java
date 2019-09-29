@@ -26,7 +26,7 @@ public class RegisterActivity extends AppCompatActivity {
     @SuppressLint("ClickableViewAccessibility")
     private void OnClickListener() {
 
-        registerPassword = findViewById(R.id.registerPassword);
+        registerPassword = findViewById(R.id.inputPassword);
         showPassIcon = findViewById(R.id.show_pass_icon);
 
 

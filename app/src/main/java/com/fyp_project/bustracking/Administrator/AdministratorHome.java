@@ -1,39 +1,41 @@
-package com.fyp_project.bustracking;
+package com.fyp_project.bustracking.Administrator;
 
 import android.os.Bundle;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import android.view.View;
-
-import androidx.core.view.GravityCompat;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-
+import android.view.Menu;
 import android.view.MenuItem;
 
-import com.google.android.material.navigation.NavigationView;
-
-import androidx.drawerlayout.widget.DrawerLayout;
-
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.view.Menu;
-import android.widget.Button;
+import com.fyp_project.bustracking.R;
+import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends AppCompatActivity
+public class AdministratorHome extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+
+    //real time tracking
+    //emergency managemnet for any kindda emergency
+    //reports (timings/routes/bus timings/student attendace on bus/speed limit alerts/ live cam view by mobile of bus)
+    //speed limit reports
+
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        setContentView(R.layout.activity_administrator);
+        toolbar = findViewById(R.id.toolbar);
+
+
+        toolbar.setTitle("Administrator Dashboard");
         setSupportActionBar(toolbar);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
@@ -97,4 +99,5 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }

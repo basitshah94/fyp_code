@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="5dp"
             android:background="@color/colorPrimary"
             android:fontFamily="@font/promptregular"
             android:padding="8dp"
@@ -58,7 +58,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="5dp"
             android:layout_marginBottom="18dp"
             android:orientation="vertical"
             android:padding="12dp">
@@ -74,10 +73,27 @@
                 android:checked="true"
                 android:drawableLeft="@drawable/commuter_icon"
                 android:gravity="center"
-                android:padding="20dp"
+                android:padding="10dp"
                 android:text="Commuter"
                 android:textColor="@color/colorPrimary"
-                android:textSize="25dp"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <RadioButton
+                android:id="@+id/admin_radio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/et_bg_no_padding"
+                android:buttonTint="@color/colorAccent"
+                android:drawableStart="@drawable/guardian_icon"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_margin="@dimen/margin_5dp"
+                android:text="@string/guardian"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
                 android:textStyle="bold" />
 
             <RadioButton
@@ -90,26 +106,10 @@
                 android:drawableStart="@drawable/driver_icon"
                 android:gravity="center"
                 android:layout_margin="@dimen/margin_5dp"
-                android:padding="20dp"
-                android:textSize="25dp"
+                android:padding="10dp"
+                android:textSize="20dp"
                 android:text="Driver"
                 android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
-
-            <RadioButton
-                android:id="@+id/admin_radio"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/et_bg_no_padding"
-                android:buttonTint="@color/colorAccent"
-                android:drawableStart="@drawable/guardian_icon"
-                android:gravity="center"
-                android:padding="20dp"
-                android:layout_margin="@dimen/margin_5dp"
-                android:text="@string/guardian"
-                android:textColor="@color/colorPrimary"
-                android:textSize="25dp"
                 android:textStyle="bold" />
 
             <RadioButton
@@ -120,11 +120,11 @@
                 android:buttonTint="@color/colorAccent"
                 android:drawableStart="@drawable/management_icon"
                 android:gravity="center"
-                android:padding="20dp"
+                android:padding="10dp"
                 android:layout_margin="@dimen/margin_5dp"
                 android:text="@string/administrator"
                 android:textColor="@color/colorPrimary"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:textStyle="bold" />
 
         </RadioGroup>
@@ -136,7 +136,19 @@
             android:layout_gravity="center"
             android:layout_marginBottom="18dp"
             android:background="@color/colorPrimaryDark"
-            android:text="NEXT"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Sign in as guest"
+            android:textAllCaps="false"
+            android:visibility="visible"
             android:textColor="@color/white"
             android:textSize="20dp" />
 

@@ -1,11 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
+    tools:context=".Commuter.CommuterHome"
     tools:showIn="@layout/app_bar_main">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/relativelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:contentDescription="@string/air_university"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/air_uni_view" />
+
+                <TextView
+                    android:id="@+id/txtview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130dp"
+                    android:background="@drawable/btn_bg_transparent"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/air_university_bus_tracking"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:drawableStart="@drawable/route"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="Find My Bus"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:drawableStart="@drawable/bus_logo_db"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="Find NearBy Bus"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:drawableStart="@drawable/bus_routes"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="Bus Routes"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:drawableStart="@drawable/guardian_logo"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="Contact Guardian"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:drawableStart="@drawable/alert_emergency"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="Emergency"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
