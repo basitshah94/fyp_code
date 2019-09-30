@@ -27,6 +27,9 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".WelcomeActivity" />
         <activity android:name=".Commuter.CommuterHome" />
+        <activity android:name=".Driver.DriverHome" />
+        <activity android:name=".Guardian.GuardianHome" />
+        <activity android:name=".Guest.GuestHome" />
     </application>
 
 </manifest>
