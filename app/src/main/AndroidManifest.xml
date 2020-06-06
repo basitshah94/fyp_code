@@ -2,34 +2,195 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fyp_project.bustracking">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
     <application
+        android:name=".MyApp"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/app_logo_2"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/app_logo_2"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".BusNavigationActivity"
+            android:label="Bus Navigation"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+
+
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+
+        </activity>
         <activity
-            android:name=".Administrator.AdministratorHome"
+            android:name=".WelcomeActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".RegisterActivity"
+            android:label="@string/register"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".Administrator.AdministratorHome">
+
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+
+        </activity>
         <activity android:name=".Commuter.CommuterHome" />
         <activity android:name=".Driver.DriverHome" />
         <activity android:name=".Guardian.GuardianHome" />
-        <activity android:name=".Guest.GuestHome" />
+        <activity android:name=".Guest.GuestHome">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+            <!--  -->
+        </activity>
+        <activity android:name=".ForgotPassword" />
+        <activity
+            android:name=".EditProfile"
+            android:label="@string/editprofile" />
+        <activity
+            android:name=".Driver.RouteInfo"
+            android:label="@string/routeinfo"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".Driver.TrackerService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Commuter.TrackerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity
+            android:name=".UserDetail.ListStudentRegistered"
+            android:label="@string/userList"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Administrator.ListUserRegistered"
+            android:label="@string/userList"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutApp"
+            android:label="@string/aboutapp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComplainForm"
+            android:label="@string/complainform"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FeedbackForm"
+            android:label="@string/feedbackform"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Commuter.BusInfo" />
+        <activity
+            android:name=".BusMaintenance"
+            android:label="@string/BusMaintenanceSummary"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TrafficViolation"
+            android:label="@string/monthlytrafficviolation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Route.AddRoute"
+            android:label="@string/addroute" />
+        <activity
+            android:name=".Route.ViewModifyRoute"
+            android:label="@string/viewmodifyroute" />
+        <activity
+            android:name=".UserApprovalBoard.UserListApprovalBoard"
+            android:label="@string/userrequestboard" />
+        <activity
+            android:name=".FindNearestBus"
+            android:label="@string/findnearestbus" />
+        <activity android:name=".FinNearestBust_test" />
+        <activity
+            android:name=".Driver.MyBusLocationDriver"
+            android:label="@string/Mybus" />
+        <activity
+            android:name=".Guardian.CurrentLocation"
+            android:label="@string/mycurrentlocation" />
+        <activity android:name=".BusModule.BusMaintenanceRecord" />
+        <activity
+            android:name=".BusModule.ListUserComplain"
+            android:label="@string/userList"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BusModule.ListGuestComplain"
+            android:label="@string/userList"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BusModule.ListUserFeedback"
+            android:label="@string/userList"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AccountStatus" />
+        <activity
+            android:name=".SubmitFeeForm"
+            android:label="Fee Challan Form"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Administrator.UserListFeeRecord"
+            android:label="Fee Record" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/bus_logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/white" />
     </application>
 
 </manifest>

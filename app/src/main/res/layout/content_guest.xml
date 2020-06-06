@@ -16,8 +16,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
+
 
             <RelativeLayout
                 android:id="@+id/relativelayout"
@@ -25,6 +26,7 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/iv_home_image"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:contentDescription="@string/air_university"
@@ -35,158 +37,128 @@
                     android:id="@+id/txtview1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="130dp"
+                    android:layout_below="@id/iv_home_image"
                     android:background="@drawable/btn_bg_transparent"
                     android:gravity="center"
+                    android:padding="10dp"
                     android:singleLine="true"
                     android:text="@string/air_university_bus_tracking"
-                    android:textColor="@color/white"
-                    android:textSize="16dp" />
+                    android:textColor="@color/white" />
+
             </RelativeLayout>
 
 
             <LinearLayout
-                android:id="@+id/row_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_5dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:weightSum="3">
+                android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <Button
+                    android:id="@+id/my_current_location"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_margin="@dimen/margin_5dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:background="@drawable/round_btn"
+                    android:drawableStart="@drawable/current_loc"
+                    android:drawablePadding="20dp"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="MY LOCATION"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medium_text_size" />
 
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:background="@color/colorPrimaryDark"
-                        android:drawableTop="@drawable/route"
-                        android:padding="@dimen/margin_5dp"
-                        android:text="View Route"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="18dp" />
 
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <Button
+                    android:id="@+id/visit_university_website"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_margin="@dimen/margin_5dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:background="@drawable/round_btn"
+                    android:drawableStart="@drawable/uni"
+                    android:drawablePadding="20dp"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="UNIVERSITY WEBSITE"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medium_text_size" />
 
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:background="@color/colorPrimaryDark"
-                        android:drawableTop="@drawable/route"
-                        android:padding="@dimen/margin_5dp"
-                        android:text="View Bus"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="18dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <Button
+                    android:id="@+id/contact_information_desk"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_margin="@dimen/margin_5dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:background="@drawable/round_btn"
+                    android:drawableStart="@drawable/communications"
+                    android:drawablePadding="20dp"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="INFORMATION DESK"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medium_text_size" />
 
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:background="@color/colorPrimaryDark"
-                        android:drawableTop="@drawable/route"
-                        android:padding="@dimen/margin_5dp"
-                        android:text="Current Location"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="18dp" />
-
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_5dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:weightSum="3">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <Button
+                    android:id="@+id/check_buses"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_margin="@dimen/margin_5dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:background="@drawable/round_btn"
+                    android:drawableStart="@drawable/bus_logo_db"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="CHECK BUSES"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:visibility="gone" />
 
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:background="@color/colorPrimaryDark"
-                        android:drawableTop="@drawable/route"
-                        android:padding="@dimen/margin_5dp"
-                        android:text="Contact Management"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="16dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <Button
+                    android:id="@+id/check_routes"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_margin="@dimen/margin_5dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:background="@drawable/round_btn"
+                    android:drawableStart="@drawable/bus_routes"
+                    android:drawablePadding="20dp"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="CHECK ROUTES"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medium_text_size" />
 
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:background="@color/colorPrimaryDark"
-                        android:drawableTop="@drawable/route"
-                        android:padding="@dimen/margin_5dp"
-                        android:text="Total Driver"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="18dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <Button
+                    android:id="@+id/emergency_response"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_margin="@dimen/margin_5dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:background="@drawable/round_btn"
+                    android:drawableStart="@drawable/alert_emergency"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="Emergency Response"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:visibility="gone" />
 
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:background="@color/colorPrimaryDark"
-                        android:drawableTop="@drawable/route"
-                        android:padding="@dimen/margin_5dp"
-                        android:text="Total Driver"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="18dp" />
-                </LinearLayout>
+                <Button
+                    android:id="@+id/suggestion_forum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableStart="@drawable/complain"
+                    android:drawablePadding="20dp"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="Complain Form"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medium_text_size" />
+
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

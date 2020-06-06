@@ -5,36 +5,43 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Track My Bus" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Emergency Response" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Contact Guardian" />
-        <item
-            android:id="@+id/nav_tools"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Customize Reports" />
+            android:id="@+id/nav_bus_maintenance"
+            android:icon="@drawable/bus_maint"
+            android:title="Manage Bus Maintenance Record" />
 
+        <item
+            android:id="@+id/nav_violation_record"
+            android:icon="@drawable/trafic_violation"
+            android:title="Manage Traffic Violation Record"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_reports"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Generate Reports"
+            android:visible="false" />
 
     </group>
+
 
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
+                android:id="@+id/nav_report_bug"
+                android:icon="@drawable/management_icon"
                 android:title="Report Bug" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
+                android:id="@+id/nav_uni"
+                android:icon="@drawable/uni_black"
                 android:title="About University" />
+            <item
+                android:id="@+id/nav_app"
+                android:icon="@drawable/mobile_icon"
+                android:title="About App" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ico_logout"
+                android:title="Logout" />
         </menu>
     </item>
-
 </menu>

@@ -4,22 +4,30 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Track My Bus" />
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person"
+            android:title="User Profile" />
+        <item
+            android:id="@+id/nav_guardian_profile"
+            android:icon="@drawable/guardian_icon"
+            android:title="Guardian Profile" />
+        <item
+            android:id="@+id/nav_track_my_bus"
+            android:icon="@drawable/bus_track"
+            android:title="Track My Bus (Map)"
+            android:visible="false" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Emergency Response" />
+            android:icon="@drawable/destination"
+            android:title="View Route (Map)"
+            android:visible="false" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Contact Guardian" />
-        <item
-            android:id="@+id/nav_tools"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Customize Reports" />
+            android:id="@+id/compalaint_driver"
+            android:icon="@drawable/complain_b"
+            android:title="Complain Driver"
+            android:visible="false" />
 
 
     </group>
@@ -28,12 +36,20 @@
         <menu>
             <item
                 android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/management_icon"
                 android:title="Report Bug" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
+                android:id="@+id/nav_uni"
+                android:icon="@drawable/uni_black"
                 android:title="About University" />
+            <item
+                android:id="@+id/nav_app"
+                android:icon="@drawable/mobile_icon"
+                android:title="About App" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ico_logout"
+                android:title="Logout" />
         </menu>
     </item>
 

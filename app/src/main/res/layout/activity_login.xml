@@ -24,21 +24,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_margin="@dimen/padding_10dp"
-            android:textSize="25dp"
-            android:layout_marginTop="20dp"
             android:layout_gravity="left"
-            android:textStyle="bold"
+            android:layout_margin="@dimen/padding_10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Sign in to continue"
             android:textColor="@android:color/darker_gray"
-            android:text="Sign in to continue"/>
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="@dimen/margin_5dp"
-            android:layout_marginTop="10dp"
             android:layout_marginBottom="2dp"
             android:orientation="vertical"
             android:padding="5dp">
@@ -50,10 +51,11 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/et_bg"
                 android:drawableStart="@drawable/email"
-                android:hint="  Email"
-                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
                 android:textColor="@android:color/darker_gray"
-                android:inputType="textEmailAddress" />
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -66,12 +68,13 @@
                     android:layout_height="60dp"
                     android:background="@drawable/et_bg"
                     android:drawableStart="@drawable/ic_pass"
-                    android:hint="  Password"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/darker_gray"
+                    android:drawablePadding="10dp"
+                    android:hint="Password"
                     android:inputType="textPassword"
                     android:maxLength="30"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:textColor="@android:color/darker_gray"
+                    android:textStyle="bold" />
 
                 <ImageButton
                     android:id="@+id/show_pass_icon"
@@ -81,6 +84,7 @@
                     android:layout_marginStart="-40dp"
                     android:contentDescription="Show/Hide Password"
                     app:srcCompat="@drawable/ic_visibility" />
+
             </LinearLayout>
 
         </LinearLayout>
@@ -98,54 +102,56 @@
             android:text="@string/forgot_password"
             android:textAllCaps="false"
             android:textColor="@android:color/darker_gray"
-            android:textSize="22dp"
+            android:textSize="17sp"
             android:textStyle="bold" />
-
 
         <Button
             android:id="@+id/btnSignIn"
-            android:layout_width="270dp"
-            android:layout_height="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="18dp"
-            android:background="@color/colorPrimaryDark"
+            android:background="@drawable/round_button"
+            android:paddingLeft="80dp"
+            android:paddingTop="15dp"
+            android:paddingRight="80dp"
+            android:paddingBottom="15dp"
             android:text="Login"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="22dp" />
+            android:textSize="@dimen/btns_size" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/padding_10dp"
+            android:layout_marginTop="10dp"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="1">
 
             <TextView
                 android:id="@+id/registerText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="0.5"
                 android:gravity="right"
-                android:padding="5dp"
                 android:text="@string/registerhere"
                 android:textAllCaps="false"
-                android:textStyle="bold"
                 android:textColor="@android:color/darker_gray"
-                android:textSize="18dp" />
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="bold" />
 
 
             <TextView
+                android:paddingLeft="10dp"
                 android:id="@+id/tvSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.1"
+                android:layout_weight="0.5"
                 android:gravity="left"
-                android:padding="5dp"
                 android:text="Sign Up"
                 android:textAllCaps="false"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="22dp"
+                android:textSize="@dimen/btns_size"
                 android:textStyle="bold" />
 
         </LinearLayout>

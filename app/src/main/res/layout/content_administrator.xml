@@ -16,7 +16,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -25,6 +25,7 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/iv_home_image"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:contentDescription="@string/air_university"
@@ -35,220 +36,149 @@
                     android:id="@+id/txtview1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="130dp"
+                    android:layout_below="@id/iv_home_image"
                     android:background="@drawable/btn_bg_transparent"
                     android:gravity="center"
+                    android:padding="10dp"
                     android:singleLine="true"
                     android:text="@string/air_university_bus_tracking"
-                    android:textColor="@color/white"
-                    android:textSize="16dp" />
+                    android:textColor="@color/white" />
+
             </RelativeLayout>
 
 
             <LinearLayout
-                android:id="@+id/row_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:weightSum="3"
                 android:layout_marginTop="@dimen/margin_5dp"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <Button
+                    android:id="@+id/checkbuses"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_margin="@dimen/margin_5dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:background="@drawable/round_btn"
+                    android:drawableStart="@drawable/bus_logo_db"
+                    android:drawablePadding="20dp"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="Check Buses"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medium_text_size"
+                    android:theme="@style/Theme.MaterialComponents.Light" />
 
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:background="@color/colorPrimaryDark"
-                        android:drawableTop="@drawable/route"
-                        android:padding="@dimen/margin_5dp"
-                        android:text="Total Route"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="18dp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/colorPrimaryDark"
-                        android:gravity="center"
-                        android:text="10"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <Button
+                    android:id="@+id/view_modify_busroute"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_margin="@dimen/margin_5dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:background="@drawable/round_btn"
+                    android:drawableStart="@drawable/bus_routes"
+                    android:drawablePadding="20dp"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="Check Routes"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medium_text_size" />
 
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:background="@color/colorPrimaryDark"
-                        android:drawableTop="@drawable/route"
-                        android:padding="@dimen/margin_5dp"
-                        android:text="Total Bus"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="18dp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/colorPrimaryDark"
-                        android:gravity="center"
-                        android:text="10"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <Button
+                    android:id="@+id/complaintform"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_margin="@dimen/margin_5dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:background="@drawable/round_btn"
+                    android:drawableStart="@drawable/complain"
+                    android:drawablePadding="20dp"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="Check Complains"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medium_text_size" />
 
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:background="@color/colorPrimaryDark"
-                        android:drawableTop="@drawable/route"
-                        android:padding="@dimen/margin_5dp"
-                        android:text="Total Driver"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="18dp" />
+                <Button
+                    android:id="@+id/view_modify_users"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableStart="@drawable/guardian"
+                    android:drawablePadding="20dp"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="View Users"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medium_text_size" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/colorPrimaryDark"
-                        android:gravity="center"
-                        android:text="10"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                <Button
+                    android:id="@+id/emergency_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableStart="@drawable/alert_emergency"
+                    android:drawablePadding="20dp"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="Manage Emergency Requests"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medium_text_size"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/feedbackBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableStart="@drawable/feedback"
+                    android:drawablePadding="20dp"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="Check Feedbacks"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <Button
+                    android:id="@+id/feelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableStart="@drawable/finance"
+                    android:drawablePadding="20dp"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="Check FEE Record"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <Button
+                    android:id="@+id/user_approval_board"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:background="@drawable/round_btn"
+                    android:drawableStart="@drawable/approval_board"
+                    android:drawablePadding="20dp"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="User Approval Board"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medium_text_size" />
+
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:weightSum="3"
-                android:layout_marginTop="@dimen/margin_5dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_5dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:background="@color/colorPrimaryDark"
-                        android:drawableTop="@drawable/route"
-                        android:padding="@dimen/margin_5dp"
-                        android:text="Total Student"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="18dp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/colorPrimaryDark"
-                        android:gravity="center"
-                        android:text="10"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_5dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:background="@color/colorPrimaryDark"
-                        android:drawableTop="@drawable/route"
-                        android:padding="@dimen/margin_5dp"
-                        android:text="Total Driver"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="18dp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/colorPrimaryDark"
-                        android:gravity="center"
-                        android:text="10"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_5dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:background="@color/colorPrimaryDark"
-                        android:drawableTop="@drawable/route"
-                        android:padding="@dimen/margin_5dp"
-                        android:text="Total Driver"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="18dp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/colorPrimaryDark"
-                        android:gravity="center"
-                        android:text="10"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-            </LinearLayout>
-
 
         </LinearLayout>
+
     </ScrollView>
+
 </LinearLayout>

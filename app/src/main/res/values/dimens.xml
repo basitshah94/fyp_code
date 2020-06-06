@@ -7,4 +7,10 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="padding_10dp">10dp</dimen>
     <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="btns_size">20sp</dimen>
+    <dimen name="small_text_size">16sp</dimen>
+    <dimen name="medium_text_size">18sp</dimen>
+    <dimen name="large_text_size">20sp</dimen>
+
+
 </resources>

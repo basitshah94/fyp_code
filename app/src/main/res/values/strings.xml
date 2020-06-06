@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">bustracking</string>
+    <string name="app_name">Air University Bus Tracking System</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -32,5 +32,32 @@
     <string name="title_profile">Profile</string>
     <string name="air_university">Air University</string>
     <string name="air_university_bus_tracking">Air University Bus Tracking</string>
+    <string name="register_success_popup">Registered successfully.\\nVerification email has been sent.\\nPlease verify your email.</string>
+    <string name="email_check">Please check your email and verify it.</string>
+    <string name="notification_text">Location is being tracked</string>
+    <string name="app_name_service">Bus Tracking System</string>
+    <string name="notification_text_new">Tracking, tap to cancel</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="maps_key">AIzaSyBqyA6QdiYIuj12H2QiOVW6AHPd936VtnQ</string>
+    <string name="aboutus">This application will ease the student’s life by providing an estimated arrival time and estimated distance of buses and their stops(tracking the location of buses). Also, students will be able to report any sort of unusual activity to avoid jeopardy. Similarly, this information will also be available to parents along with the status of their children as if he is on the bus or not. Furthermore, the driver will have a record of the students registered on the bus.</string>
+    <string name="feedbackform">Feedback</string>
+    <string name="complainform">Complain</string>
+    <string name="aboutapp">About App</string>
+    <string name="userList">Users List</string>
+    <string name="ourteam">Project ID : 1629\nSupervisor : Mr Shoaib Malik\nCo-Supervisor: Dr. Touseef Javed\nGroup Members :\nRaja Kaleem Ullah 160666\nSyed Abdul Basit Shah 160630</string>
+    <string name="BusMaintenanceSummary">Daily Bus Maintenance Summary</string>
+    <string name="routeinfo">View Route</string>
+    <string name="editprofile">Edit Profile</string>
+    <string name="monthlytrafficviolation">Monthly Traffic Violation Report</string>
+    <string name="addroute">Add Route</string>
+    <string name="viewmodifyroute">Route</string>
+    <string name="userrequestboard">User Request Board</string>
+    <string name="findnearestbus">Find Nearest Bus</string>
+    <string name="directionsapikey">AIzaSyBqyA6QdiYIuj12H2QiOVW6AHPd936VtnQ</string>
+    <string name="Mybus">My Bus Location</string>
+    <string name="mycurrentlocation">My Current Location</string>
+    <string name="raja_kaleem_ullah">Raja</string>
+    <string name="teacher">123</string>
+    <string name="press_again_exit_app">Press again to exit app</string>
 
 </resources>
